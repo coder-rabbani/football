@@ -1,0 +1,127 @@
+/* ------------------------------
+Responsive Css / Media Queries 
+---------------------------------*/
+@media(max-width:992px) {
+    /* base css */
+    .container{
+        width: 90%;
+    }
+
+    /* hero css */
+    .header-area, .hero{
+        width: 90%;
+    }
+    .nav-item i{
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+    }
+    .nav-item ul{
+        display:none;
+    }
+    .hero, .highlights{
+        flex-direction: column;
+    }
+    .hero-right img{
+        margin-top:50px;
+        max-width: 100%;
+    }
+
+
+    /* blog css */
+    .article-area{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 70px 0 0;
+    }
+
+    /* highlights css */
+    .highlights{
+        padding:60px 0px 50px; 
+    }
+    .highlights-right img{
+        max-width: 100%;
+        margin-top:30px;
+    }
+
+    /* gallery css */
+    .gallery-photos img{
+        width:49%;
+        cursor: pointer;
+        padding: 10px 0;
+    }
+
+    /* form css */
+    .newsletter{
+        padding:70px 100px;
+    }
+    #newsletter-form{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+    }
+    input{
+        width: 100%;
+    }
+
+}
+
+@media(max-width:667px) {
+    /* base css */
+    .container{
+        width: 90%;
+    }
+
+    /* hero css */
+    .hero-left{
+        padding-right:0;
+    }
+    .hero-title{
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    /* blogs css */
+    .article-area{
+        grid-template-columns: 1fr; 
+        padding: 70px 0 0;
+    }
+
+    /* highlights css */
+    .highlights-title, .gallery-title, .newsletter-title{
+        font:700 30px/40px 'Poppins', sans-serif;
+        margin:10px 0;
+    }
+    .highlights-left{
+        padding-right: 0;
+    }
+
+    /* gallery css */
+    .gallery-title{
+        padding: 0 0 30px;
+    }
+    .gallery-photos{
+        display: flex;
+        flex-direction: column;
+    }
+    .gallery-photos img{
+        width:100%;
+    }
+
+    /* form css */
+    .newsletter{
+        padding:30px 15px;
+    }
+   .newsletter-title{
+        font:700 25px/35px 'Poppins', sans-serif;
+        margin:10px 0;
+    }
+    input{
+        margin:10px 0;
+    }
+
+    /* footer css */
+    .footer-logo img{
+        max-width: 300px;
+    }
+
+}
