@@ -1,0 +1,91 @@
+/* root css */
+:root{
+    --button-color:#E02C6D;
+    --button-hover-color:#ff00bf;
+    --blue-background:#2D25A0;
+}
+
+/* ---------------
+utilities css 
+------------------*/
+body{
+    margin:0;
+    padding: 0;
+    font: 400 16px/26px 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+/* ------------------
+Top part style 
+---------------------*/
+
+/* header style */
+.top-part{
+    background-color: var(--blue-background);
+    color:#ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header.container, .hero.container{
+    width: 1164px;
+}
+.navigation, .hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:42px 0;
+}
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    list-style: none;
+    margin-right: 30px;
+}
+nav ul li a{
+    color:#ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+.btn{
+    background-color: var(--button-color);
+    border:1px solid var(--button-color); 
+    color:#ffffff;
+    padding: 10px 24px;
+    transition: all 0.5s;	
+}
+.btn:hover{
+    background-color: transparent;
+    border:1px solid #fff;
+}
+.action-btn .btn i{
+    margin-right: 5px;
+}
+.hero-left .btn i{
+    margin-left: 5px;
+    transition:all 0.5s;
+}
+.hero-left .btn:hover i{
+    margin-left: 10px;
+}
+
+/* hero section style  */
+.hero.container{
+    padding-bottom: 86px;
+}
+.hero-left{
+    padding-right: 130px;
+}
+.hero-title{
+    font:700 64px/80px 'Poppins', sans-serif;
+    margin:27px 0;
+}
+.hero-right img{
+    max-width: 556px;
+}
+
