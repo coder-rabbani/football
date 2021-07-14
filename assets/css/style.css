@@ -89,6 +89,22 @@ nav ul li a{
 .action-btn .btn i{
     margin-right: 5px;
 }
+.hero-left .btn i{
+    margin-right: 5px;
+    animation: icon 1.5s linear infinite;
+}
+
+@keyframes icon {
+    0%, 100%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(10px);
+    }
+    0% 100%{
+        transform: translate(15px);
+    }
+}
 .hero-left .btn i, .highlights-left .btn i{
     margin-left: 5px;
     transition:all 0.3s;
