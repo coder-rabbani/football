@@ -72,6 +72,9 @@ Responsive Css / Media Queries
     }
 
     /* hero css */
+    .hero{
+        padding:0 0 30px;
+    }
     .hero-left{
         padding-right:0;
     }
@@ -83,10 +86,13 @@ Responsive Css / Media Queries
     /* blogs css */
     .article-area{
         grid-template-columns: 1fr; 
-        padding: 70px 0 0;
+        padding: 47px 0 0;
     }
 
     /* highlights css */
+    .highlights{
+        padding:60px 0px 50px; 
+    }
     .highlights-title, .gallery-title, .newsletter-title{
         font:700 30px/40px 'Poppins', sans-serif;
         margin:10px 0;
@@ -97,7 +103,7 @@ Responsive Css / Media Queries
 
     /* gallery css */
     .gallery-title{
-        padding: 0 0 30px;
+        padding: 0 0 10px;
     }
     .gallery-photos{
         display: flex;

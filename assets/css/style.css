@@ -61,6 +61,9 @@ Top part style
     justify-content: space-between;
     padding:42px 0;
 }
+.nav-item i{
+    display: none;
+}
 nav ul{
     display: flex;
     margin: 0;
@@ -108,9 +111,6 @@ nav ul li a{
 .hero-left .btn i, .highlights-left .btn i{
     margin-left: 5px;
     transition:all 0.3s;
-}
-.hero-left .btn:hover i, .highlights-left .btn:hover i{
-    margin-left: 10px;
 }
 
 /* hero section style  */
