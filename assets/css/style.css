@@ -3,18 +3,41 @@
     --button-color:#E02C6D;
     --button-hover-color:#ff00bf;
     --blue-background:#2D25A0;
+    --heading-color:#0A0826;
 }
 
 /* ---------------
 utilities css 
 ------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     margin:0;
     padding: 0;
     font: 400 16px/26px 'Poppins', sans-serif;
 }
+img{
+    max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6{
+    color:var(--heading-color);
+}
+p{
+    color:#6C6C6C;
+}
 a{
     text-decoration: none;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 1050px;
 }
 
 /* ------------------
@@ -29,10 +52,10 @@ Top part style
     flex-direction: column;
     align-items: center;
 }
-header.container, .hero.container{
+.header-area, .hero{
     width: 1164px;
 }
-.navigation, .hero{
+.navigation, .hero, .highlights, footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -66,16 +89,16 @@ nav ul li a{
 .action-btn .btn i{
     margin-right: 5px;
 }
-.hero-left .btn i{
+.hero-left .btn i, .highlights-left .btn i{
     margin-left: 5px;
-    transition:all 0.5s;
+    transition:all 0.3s;
 }
-.hero-left .btn:hover i{
+.hero-left .btn:hover i, .highlights-left .btn:hover i{
     margin-left: 10px;
 }
 
 /* hero section style  */
-.hero.container{
+.hero{
     padding-bottom: 86px;
 }
 .hero-left{
@@ -84,8 +107,80 @@ nav ul li a{
 .hero-title{
     font:700 64px/80px 'Poppins', sans-serif;
     margin:27px 0;
+    color:#ffffff;
 }
 .hero-right img{
     max-width: 556px;
 }
 
+
+/* blogs section style */
+main{
+    background-color: #ffffff;
+}
+.article-area{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:30px;
+    padding:70px 0px;
+}
+article{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+article img{
+    height: 256px;
+    width: 300px;  
+}
+article h3{
+    color:#18191F;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+/* highlights section  */
+.highlights{
+    padding:95px 0px 158px; 
+}
+.highlights-title{
+    font:700 48px/60px 'Poppins', sans-serif;
+    margin:10px 0;
+}
+.highlights-left{
+    padding-right: 66px;
+}
+.highlights-left .btn{
+    display: inline-block;
+    margin-top:20px;
+}
+.highlights-left .btn:hover{
+    border:1px solid var(--button-hover-color);
+    color:#000;
+}
+.highlights-right img{
+    max-width: 500px;
+}
+
+/* footer style */
+footer{
+    flex-direction: column;
+    padding:0 0 63px;
+}
+.footer-logo img{
+    max-width: 400px;
+}
+.social-icons i{
+    margin:0 5px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #E7E7E8;
+    border-radius:100%;
+    color:#969BAB;
+    transition:0.3s;
+}
+.social-icons i:hover{
+    background-color: var(--button-color);
+    color:#ffffff;
+    cursor:pointer;
+}
