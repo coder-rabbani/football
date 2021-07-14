@@ -171,7 +171,8 @@ footer{
     max-width: 400px;
 }
 .social-icons i{
-    margin:0 5px;
+    display: inline-block;
+    margin:0px 5px 15px;
     padding: 10px;
     font-size: 20px;
     background-color: #E7E7E8;
